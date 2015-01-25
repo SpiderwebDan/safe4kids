@@ -1,0 +1,60 @@
+// Fonts
+@import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,300);
+@import url(http://fonts.googleapis.com/css?family=News+Cycle);
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('/safe4kids/assets/fonts/icomoon.eot?-uivsm9');
+	src:url('/safe4kids/assets/fonts/icomoon.eot?#iefix-uivsm9') format('embedded-opentype'),
+		url('/safe4kids/assets/fonts/icomoon.woff?-uivsm9') format('woff'),
+		url('/safe4kids/assets/fonts/icomoon.ttf?-uivsm9') format('truetype'),
+		url('/safe4kids/assets/fonts/icomoon.svg?-uivsm9#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-copyright:before {
+	content: "\e601";
+}
+
+.icon-fax:before {
+	content: "\e600";
+}
+
+.icon-phone:before {
+	content: "\e942";
+}
+
+.icon-menu:before {
+	content: "\e9bd";
+}
+
+.icon-sphere:before {
+	content: "\e9c9";
+}
+
+.icon-mail:before {
+	content: "\ea86";
+}
+
+.icon-facebook:before {
+	content: "\ea8e";
+}
+
+.icon-twitter:before {
+	content: "\ea93";
+}

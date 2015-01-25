@@ -1,0 +1,188 @@
+nav {
+    @include outer-container;
+
+    //height: 200px;
+
+    .logo {
+        float: left;
+        display: block;
+        height: 200px;
+        a {
+            img {
+                margin-top: 40px;
+                position: absolute;
+                @include media($mobile) {
+                    width: 280px;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    position: relative;
+                }
+            }
+        }
+        @include span-columns(4);
+        @include media($mobile) {
+            height: 140px;
+            @include span-columns(4);
+        }
+    }
+    .nav-wrap {
+        .call {
+            position: relative;
+            width: 100%;
+            text-align: right;
+            font: bold 25px Arial;
+            color: $green;
+            margin: 10px 0px 20px 0px;
+            font-family: 'News Cycle', sans-serif;
+            a {
+                color: $green;
+            }
+            @include span-columns(8 of 8);
+            @include media($tablet) {
+                text-align: left;
+            }
+            @include media($mobile) {
+                text-align: center;
+                @include span-columns(4);
+            }
+        }
+        .menu {
+            position: relative;
+            top: 20px;
+            left: 0px;
+            ul {
+                float: right;
+                list-style-type: none;
+                li {
+                    margin-left: 20px;
+                    font-size: 22px;
+                    font-family: 'Yanone Kaffeesatz', sans-serif;
+                    display: inline;
+                    color: $text;
+                    transition: color 0.3s ease;
+                    .current_page_item {
+                        color: $green;
+                    }
+                    &:hover {
+                        color: $green;
+                    }
+                    @include media($tablet) {
+                        display: none;
+                    }
+                }
+                .current_page_item {
+                    color: $green;
+                    @include media($tablet) {
+                        margin-left: 0px;
+                        display: block;
+                    }
+                }
+                @include media($tablet) {
+                    float: left;
+                    margin-left: 0px;
+                    margin-top: 10px;
+                    li {
+                        margin-left: 0px;
+                    }
+                }
+                @include media($mobile) {
+                    display: none;
+                }
+            }
+            .active {
+                position: fixed;
+                z-index: 100;
+                height: vh;
+                width: vw;
+                top: 0px;
+                left: 0px;
+                margin: 0 auto;
+                padding: 0px;
+                background-color: rgba(66, 66, 66, 0.7);
+                li {
+                    width: 100%;
+                    border-bottom: 1px solid $purple;
+                    display: block !important;
+                }
+            }
+            span {
+                display: none;
+                border-radius: 50%;
+                border: 10px solid $purple;
+                background-color: $purple;
+                float: left;
+                font-size: 30px;
+                color: $green;
+                transition: background-color 0.3s ease;
+                &:hover {
+                    color: $purple;
+                    background-color: $green;
+                    border: 10px solid $green;
+                }
+                @include media($tablet) {
+                    display: block;
+                }
+                @include media($mobile) {
+                    border: 5px solid $purple;
+                    top: 15px;
+                    right: 15px;
+                    font-size: 25px;
+                    width: 35px;
+                    position: fixed;
+                    &:hover {
+                        border: 5px solid $green;
+                    }
+                }
+            }
+            .fixed {
+                top: 15px;
+                right: 15px;
+                position: fixed;
+            }
+            @include span-columns(8 of 8);
+        }
+        .social-links {
+            width: 100%;
+            margin-top: 25px;
+            span {
+                float: right;
+                margin-left: 10px;
+                color: $purple;
+                font-size: 30px;
+                transition: color 0.3s ease;
+                &:hover {
+                    color: $green;
+                }
+                @include media($tablet) {
+                    float: left;
+                }
+                @include media($mobile) {
+                    float: none;
+                }
+            }
+            @include span-columns(8 of 8);
+            @include media($tablet) {
+                margin-top: 30px;
+                text-align: left;
+                float: none;
+                @include span-columns(4);
+            }
+            @include media($mobile) {
+                text-align: center;
+                @include span-columns(4);
+            }
+        }
+        @include span-columns(8);
+        @include media($tablet) {
+            padding-left: 25%;
+        }
+        @include media($mobile) {
+            padding-left: 0px;
+            @include span-columns(4);
+        }
+    }
+    @include media($mobile) {
+        border-bottom: 2px solid $purple;
+    }
+}

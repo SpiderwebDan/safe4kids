@@ -1,0 +1,89 @@
+.intro-wrap {
+    border-bottom: 2px solid $purple;
+    background-color: #e1d4ea;
+    .intro {
+        @include outer-container;
+        margin-bottom: 40px;
+        .info {
+            @include span-columns(8);
+            @include media($mobile) {
+                @include span-columns(4);
+            }
+        }
+        .quote {
+            h3 {
+                width: 100%;
+                text-align: center;
+                margin: 70px 20px 0px 0px;
+                font-family: 'Yanone Kaffeesatz', sans-serif;
+                font-weight: 300;
+                font-size: 25px;
+                color: #483957;
+                letter-spacing: 1px;
+                @include media($mobile) {
+                    margin-top: 10px;
+                    padding: 0px 10px 0px 10px;
+                }
+            }
+            p {
+                text-align: right;
+                font-family: 300 'Yanone Kaffeesatz', sans-serif;
+                font-size: 20px;
+                color: #71bd13;
+                padding-right: 40px;
+                @include media($mobile) {
+                    margin-bottom: 0px;
+                    padding-right: 10px;
+                }
+            }
+            @include span-columns(4);
+            @include omega();
+            @include media($mobile) {
+                @include span-columns(4);
+            }
+        }
+    }
+}
+section {
+    @include outer-container;
+    article {
+        margin-top: 60px;
+        button {
+            width: 120px;
+            height: 40px;
+            border: 0px;
+            color: white;
+            background-color: $green;
+            transition: background-color 0.3s ease;
+            font-size: 14px;
+            margin-bottom: 40px;
+            &:hover {
+                border: 1px solid $green;
+                background-color: $purple;
+                color: $green;
+            }
+            @include media($mobile) {
+                margin-bottom: 30px;
+            }
+        }
+        img {
+            border: 10px solid $green;
+            transition: border 0.5s ease;
+            &:hover {
+                border: 10px solid $purple;
+            }
+            @include media($tablet) {
+                width: 240px !important;
+            }
+            @include media($mobile) {
+                width: 280px !important;
+            }
+        }
+        @include span-columns(4);
+        @include omega(3n);
+        @include media($mobile) {
+            margin-top: 30px;
+            @include span-columns(4);
+        }
+    }
+}

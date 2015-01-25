@@ -1,0 +1,106 @@
+.social-wrap {
+    border-top: 2px solid $purple;
+    width: 100%;
+    background-color: #e7e7e7;
+    h2, h3, h4, p, i, address, li{
+        color: #767676;
+    }
+    .social {
+        @include outer-container;
+        padding: 30px 0px;
+        section {
+            address {
+                font-family: 'News Cycle', sans-serif;
+                font-style: italic;
+                a {
+                    color: $green;
+                    &:hover {
+                        color: $purple;
+                    }
+                }
+            }
+            span {
+                font-size: 35px;
+                color: #868686;
+                margin: 10px 10px 0px 0px;
+                &:hover {
+                    color: $green;
+                }
+            }
+            form {
+                margin-bottom: 30px;
+                input[type=text] {
+                    display: block;
+                    width: 245px;
+                    height: 30px;
+                    padding-left: 5px;
+                    border: 1px solid $purple;
+                    margin-bottom: 17px;
+                }
+                input[type=submit] {
+                    width: 130px;
+                    height: 30px;
+                    background-color: $green;
+                    border: 0px;
+                    color: $purple;
+                    &:hover {
+                        background-color: $purple;
+                        color: $green;
+                    }
+                }
+                @include media($mobile) {
+                    margin-bottom: 10px;
+                }
+            }
+            h4, i {
+                color: #72be13; //Brighter colour due to background.
+            }
+            i {
+                display: block;
+            }
+            ul {
+                list-style-type: none;
+                padding-left: 0px;
+                li {
+                    font-family: 'News Cycle', sans-serif;
+                    &:hover {
+                        color: $green;
+                    }
+                }
+            }
+            @include span-columns(4);
+            @include omega(3n);
+            @include media($mobile) {
+                @include span-columns(4);
+            }
+        }
+    }
+}
+footer {
+    width: 100%;
+    background-color: #212121;
+    height: 50px;
+    border-top: 1px solid #606060;
+    padding: 12px 0;
+    #back-to-top {
+        float: right;
+        @include media($tablet) {
+            display: none !important;
+        }
+    }
+    a {
+        color: $green;
+        &:hover {
+            color: $purple;
+        }
+    }
+    p {
+        margin: 0;
+        font-size: 12px;
+        float: left;
+        color: white;
+    }
+    @include media($tablet) {
+        padding-left: 20px;
+    }
+}
