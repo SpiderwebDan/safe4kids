@@ -3,8 +3,8 @@
   "description": "Grunt tasks to assist in development.",
   "version": "1.0.0",
   "repository": {
-      "type": "git",
-      "url": "https://github.com/SpiderwebDan"
+    "type": "git",
+    "url": "https://github.com/SpiderwebDan"
   },
   "devDependencies": {
     "grunt": "^0.4.5",

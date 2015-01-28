@@ -23,31 +23,31 @@
 </head>
 <body>
      <nav>
-         <div class="logo">
-             <a href="/" ><img src="/safe4kids/assets/art/logo.jpg" alt="logo" width="389px" height="113px" /></a>
-         </div>
-         <div class="nav-wrap">
-             <div class="menu">
-                 <span class="icon-menu"></span>
-                 <ul>
-                     <li>Home</li>
-                     <li>About Us</li>
-                     <li>Training</li>
-                     <li class="current_page_item">Shop+</li>
-                     <li>Testimonials</li>
-                     <li>Blog</li>
-                     <li>Newsletters</li>
-                     <li>Contact Us</li>
-                 </ul>
-             </div>
-             <div class="social-links">
-                 <span class="icon-twitter"></span>
-                 <span class="icon-mail"></span>
-                 <span class="icon-facebook"></span>
-             </div>
-             <div class="call">Call us: (08) 9497 7685</div>
+        <div class="logo">
+            <a href="/" ><img src="/safe4kids/assets/art/logo.jpg" alt="logo" width="389px" height="113px" /></a>
         </div>
-    </nav>
+        <div class="nav-wrap">
+            <div class="menu">
+                <span class="icon-menu"></span>
+                <ul>
+                    <span class="icon-cross"></span>
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Training</li>
+                    <li class="current_page_item">Shop+</li>
+                    <li>Testimonials</li>
+                    <li>Blog</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+            <div class="social-links">
+                <span class="icon-twitter"></span>
+                <span class="icon-mail"></span>
+                <span class="icon-facebook"></span>
+            </div>
+            <div class="call">Call us: (08) 9497 7685</div>
+       </div>
+   </nav>
     <header>
         <div>
             <h1>Shop</h1>
@@ -63,29 +63,70 @@
             </section>
             <hr>
             <section>
-                <h2>Product Categories</h2>
+                <h3>Categories</h3>
                 <ul>
-                    <li>Posters</li>
+                    <li>All</li>
+                    <li class="active">Posters</li>
                     <li>Stickers</li>
                     <li>Books</li>
                     <li>Cards</li>
                     <li>Others</li>
                 </ul>
+                <select>
+                    <option value="/" class="active">Posters</option>
+                    <option value="/safe4kids/products/all">All</option>
+                    <option value="/safe4kids/products/stickers">Stickers</option>
+                    <option value="/safe4kids/products/books">Books</option>
+                    <option value="/safe4kids/products/cards">Cards</option>
+                    <option value="/safe4kids/products/other">Other</option>
+                </select>
             </section>
             <hr>
             <section>
-                <h3>Shopping Cart <span class="icon-cart"></span></h3>
+                <h3>Cart <span class="icon-cart"></span></h3>
                 <p> 0 items</p>
             </section>
         </aside>
-        <div class="two_third">
+        <div class="products">
             <h2>Products - Posters</h2>
             <hr>
             <p>Showing all 4 results.</p>
-            <div class="products">
-                <article>
-                </article>
-            </div>
+            <article>
+                <img src="/safe4kids/assets/art/demo-product.png" alt="Demo Product" width="200px" height="200px" />
+                <h2>Feeling Cards</h2>
+                <div>
+                    <span itemprop="priceCurrency" content="AUD">$</span><span itemprop="price" content="20.00">20.00</span> - <a href="#">Read More</a>
+                    <br>
+                    <button>Add to Cart</button>
+                </div>
+            </article>
+            <article class="sale">
+                <img src="/safe4kids/assets/art/demo-product.png" alt="Demo Product" width="200px" height="200px" />
+                <h2>Feeling Cards</h2>
+            <div>
+                    <span itemprop="priceCurrency" content="AUD">$</span><span itemprop="price" content="20.00">20.00</span> - <a href="#">Read More</a>
+                    <br>
+                    <button>Add to Cart</button>
+                </div>
+            </article>
+            <article>
+                <img src="/safe4kids/assets/art/demo-product.png" alt="Demo Product" width="200px" height="200px" />
+                <h2>Feeling Cards</h2>
+                <div>
+                    <span itemprop="priceCurrency" content="AUD">$</span><span itemprop="price" content="20.00">20.00</span> - <a href="#">Read More</a>
+                    <br>
+                    <button>Add to Cart</button>
+                </div>
+            </article>
+            <article>
+                <img src="/safe4kids/assets/art/demo-product.png" alt="Demo Product" width="200px" height="200px" />
+                <h2>Feeling Cards</h2>
+                <div>
+                    <span itemprop="priceCurrency" content="AUD">$</span><span itemprop="price" content="20.00">20.00</span> - <a href="#">Read More</a>
+                    <br>
+                    <button>Add to Cart</button>
+                </div>
+            </article>
         </div>
     </div>
 

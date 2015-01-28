@@ -27,8 +27,17 @@ $(document).ready(function() {
         }
     });
 
+    //Change the products page category with drop down list.
+    $(".content aside section select").change(function() {
+        window.location = $(this).find("option:selected").val();
+    });
+
     //Show hide menu for tablet and mobile.
     $('.icon-menu').click(function(){
+      console.log("working?");
+        $('.menu ul').toggleClass('active');
+    });
+    $('.icon-cross').click(function(){
         $('.menu ul').toggleClass('active');
     });
 

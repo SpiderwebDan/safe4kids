@@ -1,0 +1,209 @@
+header {
+    a {
+        .icon-cart {
+            top: -50px;
+            float: right;
+            position: relative;
+            display: inline;
+            color: $dark-green;
+            font-size: 20px;
+            &:hover {
+                color: $purple;
+                cursor: pointer;
+            }
+        }
+        p {
+            margin: 0px 10px;
+            top: -57px;
+            position: relative;
+            float:right;
+            display: inline;
+            font-family: 'News Cycle', sans-serif;
+            font-size: 20px;
+            &:hover {
+                color: $purple;
+                cursor: pointer;
+            }
+        }
+    }
+}
+aside {
+    .active {
+        color: $green;
+    }
+    h2, h3 {
+        color: $green;
+    }
+    input[type="text"] {
+        width: 250px;
+        margin-bottom: 20px;
+        height: 30px;
+        border: 0px solid;
+        padding-left: 10px;
+        padding-right: 30px;
+        @include inner-shadow(0px, 0px, 10px, rgba(0, 0, 0, 0.15));
+        @include media($tablet) {
+            width: 180px;
+        }
+    }
+    hr {
+        width: 250px;
+        margin-left: 0px;
+        @include media($tablet) {
+            width: 180px;
+        }
+    }
+    section {
+        @include media($tablet) {
+            @include span-columns(4 of 12);
+            @include omega(3n);
+        }
+        @include media($mobile) {
+            @include span-columns(12);
+        }
+    }
+    select {
+        display: none;
+        @include media($tablet) {
+            display: inline;
+        }
+    }
+    span {
+        color: #d3d3d3;
+        position:relative;
+        right: 30px;
+        top: 3px;
+        @include media($tablet) {
+            right: 50px;
+        }
+    }
+    ul {
+        padding-left: 20px;
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+        color: $purple;
+        font-size: 25px;
+        list-style: none;
+        display: inline;
+        li {
+            margin-bottom: 7px;
+            transition: color 0.3s ease;
+            &:before {
+                content: "+";
+                margin-right: 4px;
+            }
+            &:hover {
+                color: $green;
+                cursor: pointer;
+            }
+        }
+        @include media($tablet) {
+            display: none;
+        }
+    }
+    @include media($desktop) {
+        @include span-columns(3);
+    }
+    @include media($tablet) {
+        hr {
+            display: none;
+        }
+        @include span-columns(12);
+    }
+    @include media($mobile) {
+        @include span-columns(12);
+    }
+}
+.icon-cart {
+    display: inline;
+    margin-left: 40px;
+    color: $purple;
+}
+.products {
+    margin-top: 20px;
+    margin-bottom:20px;
+    .sale {
+        position: relative;
+        &:before {
+            content: url("/safe4kids/assets/art/sale.png");
+            position: absolute;
+            right: 0px;
+            top: -10px;
+            z-index: 100;
+            @include media($tablet) {
+                right: 10px;
+            }
+        }
+    }
+    article {
+        img {
+            position: relative;
+            top: 0px;
+            left: 0px;
+            margin: 0px auto;
+            display: block;
+            @include box-shadow(0px, 0px, 15px, rgba(143, 110, 167, 0.7)); //Purple
+            &:hover {
+                @include box-shadow(0px, 0px, 15px, rgba(144, 185, 93, 1)); //Green
+                cursor: pointer;
+            }
+        }
+        h2 {
+            color: $green;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+        div {
+            text-align: center;
+            span {
+                font-weight: bold;
+            }
+            a {
+                color: $purple;
+                font-weight: bold;
+                font-size: 18px;
+                transition: color 0.3s ease;
+                &:hover {
+                    color: $green;
+                }
+            }
+            button {
+                margin: 10px 0px;
+                width: 90px;
+                height: 30px;
+                background-color: $green;
+                border: 0px;
+                color: white;
+                transition: background-color 0.3s ease;
+                &:hover {
+                    background-color: white;
+                    border: 1px solid $green;
+                    color: $green;
+                    cursor: pointer;
+                }
+            }
+        }
+        @include span-columns(3);
+        @include media($desktop) {
+            @include span-columns(3 of 9);
+            @include omega(3n);
+        }
+        @include media($tablet) {
+            @include span-columns(4 of 12);
+            @include omega(3n);
+        }
+        @include media($mobile) {
+            @include span-columns(12 of 12);
+        }
+    }
+
+    @include span-columns(9);
+    @include media($tablet) {
+        @include span-columns(9);
+    }
+    @include media($tablet) {
+        @include span-columns(12);
+    }
+    @include media($mobile) {
+        @include span-columns(12);
+    }
+}

@@ -23,7 +23,7 @@ nav {
         @include span-columns(4);
         @include media($mobile) {
             height: 140px;
-            @include span-columns(4);
+            @include span-columns(12);
         }
     }
     .nav-wrap {
@@ -44,7 +44,7 @@ nav {
             }
             @include media($mobile) {
                 text-align: center;
-                @include span-columns(4);
+                @include span-columns(12);
             }
         }
         .menu {
@@ -54,6 +54,9 @@ nav {
             ul {
                 float: right;
                 list-style-type: none;
+                span {
+                  display: none;
+                }
                 li {
                     margin-left: 20px;
                     font-size: 22px;
@@ -92,18 +95,34 @@ nav {
             }
             .active {
                 position: fixed;
-                z-index: 100;
-                height: vh;
-                width: vw;
+                z-index: 200;
+                width: 100%;
                 top: 0px;
                 left: 0px;
                 margin: 0 auto;
                 padding: 0px;
-                background-color: rgba(66, 66, 66, 0.7);
+                background-color: rgba(66, 66, 66, 0.95);
+                span {
+                  display: inline;
+                  position: fixed;
+                  top: 6px;
+                  right: 10px;
+                }
                 li {
                     width: 100%;
                     border-bottom: 1px solid $purple;
                     display: block !important;
+                    text-align: center;
+                    padding: 9px 0px;
+                    font-size: 24px;
+                    font-weight: bold;
+                    letter-spacing: 2px;
+                    &:hover {
+                      background-color: rgba(143, 110, 167, 0.5);
+                    }
+                }
+                @include media($mobile) {
+                  display: block;
                 }
             }
             span {
@@ -115,6 +134,7 @@ nav {
                 font-size: 30px;
                 color: $green;
                 transition: background-color 0.3s ease;
+                z-index: 100;
                 &:hover {
                     color: $purple;
                     background-color: $green;
@@ -166,11 +186,11 @@ nav {
                 margin-top: 30px;
                 text-align: left;
                 float: none;
-                @include span-columns(4);
+                @include span-columns(12);
             }
             @include media($mobile) {
                 text-align: center;
-                @include span-columns(4);
+                @include span-columns(12);
             }
         }
         @include span-columns(8);
@@ -179,10 +199,7 @@ nav {
         }
         @include media($mobile) {
             padding-left: 0px;
-            @include span-columns(4);
+            @include span-columns(12);
         }
-    }
-    @include media($mobile) {
-        border-bottom: 2px solid $purple;
     }
 }

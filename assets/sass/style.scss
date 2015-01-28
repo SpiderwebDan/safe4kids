@@ -36,7 +36,7 @@ p, span, div {
 	color: $text;
 }
 span {
-	display: block;
+	display: inline;
 }
 .wrap {
 	width: $max-width;
@@ -59,8 +59,18 @@ img {
 aside {
 	margin-top: 20px;
 	margin-bottom:20px;
+	@include span-columns(3);
+	@include media($mobile) {
+		@include span-columns(4);
+	}
+}
+.one_third {
+	margin-top: 20px;
+	margin-bottom:20px;
 	@include span-columns(4);
 	@include media($mobile) {
+		padding-left: 20px;
+		padding-right: 20px;
 		@include span-columns(4);
 	}
 }
@@ -69,6 +79,8 @@ aside {
 	margin-bottom:20px;
 	@include span-columns(8);
 	@include media($mobile) {
+		padding-left: 20px;
+		padding-right: 20px;
 		@include span-columns(4);
 	}
 }
@@ -86,4 +98,4 @@ aside {
 }
 
 //Imports
-@import 'header', 'content', 'employee', 'fonts', 'home', 'slider', 'shop', 'footer';
+@import 'header', 'content', 'employee', 'fonts', 'home', 'slider', 'products', 'footer';
