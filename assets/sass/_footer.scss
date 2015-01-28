@@ -1,5 +1,5 @@
 .social-wrap {
-    border-top: 2px solid $purple;
+    border-top: 1px solid $purple;
     width: 100%;
     background-color: #e7e7e7;
     h2, h3, h4, p, i, address, li{
@@ -20,6 +20,7 @@
                 }
             }
             span {
+                display: inline;
                 font-size: 35px;
                 color: #868686;
                 margin: 10px 10px 0px 0px;
@@ -80,7 +81,7 @@ footer {
     width: 100%;
     background-color: #212121;
     height: 50px;
-    border-top: 1px solid #606060;
+    border-top: 2px solid #606060;
     padding: 12px 0;
     #back-to-top {
         float: right;

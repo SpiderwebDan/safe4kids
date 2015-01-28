@@ -3,8 +3,8 @@
     background-image: url('/safe4kids/assets/art/slider-background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    border-top: 2px solid $purple;
-    border-bottom: 2px solid $purple;
+    border-top: 1px solid $purple;
+    border-bottom: 1px solid $purple;
     .banner {
         @include outer-container;
         ul {

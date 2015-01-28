@@ -4,6 +4,7 @@
 /* Colors */
 $purple: #8f6ea7;
 $green: #90b95d;
+$dark-green: #5f862a;
 $headers: #454545;
 $text: #747474;
 
@@ -27,9 +28,15 @@ h1, h2, h3, h4, h5 {
 	letter-spacing: 2px;
 	color: $headers;
 }
-p {
+hr {
+	border-top: 1px solid #ccc;
+}
+p, span, div {
 	font-family: 'News Cycle', sans-serif;
 	color: $text;
+}
+span {
+	display: block;
 }
 .wrap {
 	width: $max-width;
@@ -48,12 +55,35 @@ img {
 	}
 }
 
+/* Grid */
+aside {
+	margin-top: 20px;
+	margin-bottom:20px;
+	@include span-columns(4);
+	@include media($mobile) {
+		@include span-columns(4);
+	}
+}
+.two_third {
+	margin-top: 20px;
+	margin-bottom:20px;
+	@include span-columns(8);
+	@include media($mobile) {
+		@include span-columns(4);
+	}
+}
+
 /* Mixins */
 @mixin box-shadow($x, $y, $blur, $rgba) {
 	-webkit-box-shadow: $x $y $blur 0px $rgba;
 	-moz-box-shadow:    $x $y $blur 0px $rgba;
 	box-shadow:         $x $y $blur 0px $rgba;
 }
+@mixin inner-shadow($x, $y, $blur, $rgba) {
+	-webkit-box-shadow: inset $x $y $blur 0px $rgba;
+	-moz-box-shadow:    inset $x $y $blur 0px $rgba;
+	box-shadow:         inset $x $y $blur 0px $rgba;
+}
 
 //Imports
-@import 'header', 'content', 'fonts', 'home', 'slider', 'footer';
+@import 'header', 'content', 'employee', 'fonts', 'home', 'slider', 'shop', 'footer';

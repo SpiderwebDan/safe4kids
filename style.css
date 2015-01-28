@@ -19,11 +19,11 @@ html {
   box-sizing: inherit; }
 
 /* General */
-/* line 16, assets/sass/style.scss */
+/* line 17, assets/sass/style.scss */
 a {
   text-decoration: none !important; }
 
-/* line 19, assets/sass/style.scss */
+/* line 20, assets/sass/style.scss */
 article {
   max-width: 75em;
   margin-left: auto;
@@ -34,36 +34,89 @@ article {
     display: table;
     clear: both; }
 
-/* line 22, assets/sass/style.scss */
+/* line 23, assets/sass/style.scss */
 body {
   margin: 0px; }
 
-/* line 25, assets/sass/style.scss */
+/* line 26, assets/sass/style.scss */
 h1, h2, h3, h4, h5 {
   font-family: 'News Cycle', sans-serif;
   letter-spacing: 2px;
   color: #454545; }
 
-/* line 30, assets/sass/style.scss */
-p {
+/* line 31, assets/sass/style.scss */
+hr {
+  border-top: 1px solid #ccc; }
+
+/* line 34, assets/sass/style.scss */
+p, span, div {
   font-family: 'News Cycle', sans-serif;
   color: #747474; }
 
-/* line 34, assets/sass/style.scss */
+/* line 38, assets/sass/style.scss */
+span {
+  display: block; }
+
+/* line 41, assets/sass/style.scss */
 .wrap {
   width: 75em;
   margin: 0 auto; }
 
 @media screen and (max-width: 1200px) {
-  /* line 39, assets/sass/style.scss */
+  /* line 46, assets/sass/style.scss */
   address, button, h1, h2, h3, h4, h5, input, p, ul {
     margin-left: 20px;
     margin-right: 20px; } }
 
 @media screen and (max-width: 1200px) {
-  /* line 45, assets/sass/style.scss */
+  /* line 52, assets/sass/style.scss */
   img {
     margin-left: 5px; } }
+
+/* Grid */
+/* line 59, assets/sass/style.scss */
+aside {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  float: left;
+  display: block;
+  margin-right: 1.69492%;
+  width: 32.20339%; }
+  /* line 85, C:/wamp/www/safe4kids/neat/grid/_span-columns.scss */
+  aside:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 480px) {
+    /* line 59, assets/sass/style.scss */
+    aside {
+      float: left;
+      display: block;
+      margin-right: 5.26316%;
+      width: 100%; }
+      /* line 85, C:/wamp/www/safe4kids/neat/grid/_span-columns.scss */
+      aside:last-child {
+        margin-right: 0; } }
+
+/* line 67, assets/sass/style.scss */
+.two_third {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  float: left;
+  display: block;
+  margin-right: 1.69492%;
+  width: 66.10169%; }
+  /* line 85, C:/wamp/www/safe4kids/neat/grid/_span-columns.scss */
+  .two_third:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 480px) {
+    /* line 67, assets/sass/style.scss */
+    .two_third {
+      float: left;
+      display: block;
+      margin-right: 5.26316%;
+      width: 100%; }
+      /* line 85, C:/wamp/www/safe4kids/neat/grid/_span-columns.scss */
+      .two_third:last-child {
+        margin-right: 0; } }
 
 /* Mixins */
 /* line 1, assets/sass/_header.scss */
@@ -334,10 +387,83 @@ nav {
     nav {
       border-bottom: 2px solid #8f6ea7; } }
 
+/* line 1, assets/sass/_content.scss */
+header {
+  width: 100%;
+  background-image: url("/safe4kids/assets/art/slider-background.jpg");
+  background-size: 100% 200%;
+  background-repeat: no-repeat;
+  height: 80px;
+  border-top: 1px solid #8f6ea7;
+  border-bottom: 1px solid #8f6ea7; }
+  /* line 9, assets/sass/_content.scss */
+  header div {
+    max-width: 75em;
+    margin-left: auto;
+    margin-right: auto; }
+    /* line 10, assets/sass/_content.scss */
+    header div h1 {
+      margin-top: 10px;
+      color: #5f862a; }
+    /* line 15, C:/wamp/www/safe4kids/bourbon/addons/_clearfix.scss */
+    header div:after {
+      content: "";
+      display: table;
+      clear: both; }
+
+/* line 17, assets/sass/_content.scss */
+.content {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 15, C:/wamp/www/safe4kids/bourbon/addons/_clearfix.scss */
+  .content:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+/* line 1, assets/sass/_employee.scss */
+.employee {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 20px auto; }
+  /* line 15, C:/wamp/www/safe4kids/bourbon/addons/_clearfix.scss */
+  .employee:after {
+    content: "";
+    display: table;
+    clear: both; }
+  /* line 4, assets/sass/_employee.scss */
+  .employee span[itemprop="name"] {
+    font-weight: bold;
+    font-size: 20px; }
+  /* line 8, assets/sass/_employee.scss */
+  .employee a[itemprop="email"] {
+    font-style: italic;
+    color: #90b95d; }
+    /* line 11, assets/sass/_employee.scss */
+    .employee a[itemprop="email"]:hover {
+      color: #8f6ea7; }
+  /* line 15, assets/sass/_employee.scss */
+  .employee span[itemprop="telephone"] {
+    font-style: italic;
+    display: inline; }
+  /* line 19, assets/sass/_employee.scss */
+  .employee p {
+    margin: 10px 0px; }
+  /* line 22, assets/sass/_employee.scss */
+  .employee img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 10px solid #e1e1e1; }
+
 @font-face {
   font-family: 'icomoon';
-  src: url("/safe4kids/assets/fonts/icomoon.eot?-uivsm9");
-  src: url("/safe4kids/assets/fonts/icomoon.eot?#iefix-uivsm9") format("embedded-opentype"), url("/safe4kids/assets/fonts/icomoon.woff?-uivsm9") format("woff"), url("/safe4kids/assets/fonts/icomoon.ttf?-uivsm9") format("truetype"), url("/safe4kids/assets/fonts/icomoon.svg?-uivsm9#icomoon") format("svg");
+  src: url("/safe4kids/assets/fonts/icomoon.eot?mkmcpr");
+  src: url("/safe4kids/assets/fonts/icomoon.eot?#iefixmkmcpr") format("embedded-opentype"), url("/safe4kids/assets/fonts/icomoon.woff?mkmcpr") format("woff"), url("/safe4kids/assets/fonts/icomoon.ttf?mkmcpr") format("truetype"), url("/safe4kids/assets/fonts/icomoon.svg?mkmcpr#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 /* line 16, assets/sass/_fonts.scss */
@@ -362,32 +488,36 @@ nav {
   content: "\e600"; }
 
 /* line 38, assets/sass/_fonts.scss */
+.icon-cart:before {
+  content: "\e93a"; }
+
+/* line 42, assets/sass/_fonts.scss */
 .icon-phone:before {
   content: "\e942"; }
 
-/* line 42, assets/sass/_fonts.scss */
+/* line 46, assets/sass/_fonts.scss */
+.icon-search:before {
+  content: "\e986"; }
+
+/* line 50, assets/sass/_fonts.scss */
 .icon-menu:before {
   content: "\e9bd"; }
 
-/* line 46, assets/sass/_fonts.scss */
-.icon-sphere:before {
-  content: "\e9c9"; }
-
-/* line 50, assets/sass/_fonts.scss */
+/* line 54, assets/sass/_fonts.scss */
 .icon-mail:before {
   content: "\ea86"; }
 
-/* line 54, assets/sass/_fonts.scss */
+/* line 58, assets/sass/_fonts.scss */
 .icon-facebook:before {
   content: "\ea8e"; }
 
-/* line 58, assets/sass/_fonts.scss */
+/* line 62, assets/sass/_fonts.scss */
 .icon-twitter:before {
   content: "\ea93"; }
 
 /* line 1, assets/sass/_home.scss */
 .intro-wrap {
-  border-bottom: 2px solid #8f6ea7;
+  border-bottom: 1px solid #8f6ea7;
   background-color: #e1d4ea; }
   /* line 4, assets/sass/_home.scss */
   .intro-wrap .intro {
@@ -545,8 +675,8 @@ section {
   background-image: url("/safe4kids/assets/art/slider-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  border-top: 2px solid #8f6ea7;
-  border-bottom: 2px solid #8f6ea7; }
+  border-top: 1px solid #8f6ea7;
+  border-bottom: 1px solid #8f6ea7; }
   /* line 8, assets/sass/_slider.scss */
   .slider .banner {
     max-width: 75em;
@@ -640,9 +770,85 @@ section {
     .slider {
       display: none !important; } }
 
+/* line 3, assets/sass/_shop.scss */
+header a .icon-cart {
+  top: -50px;
+  float: right;
+  position: relative;
+  display: inline;
+  color: #5f862a;
+  font-size: 20px; }
+  /* line 10, assets/sass/_shop.scss */
+  header a .icon-cart:hover {
+    color: #8f6ea7;
+    cursor: pointer; }
+/* line 15, assets/sass/_shop.scss */
+header a p {
+  margin: 0px 10px;
+  top: -57px;
+  position: relative;
+  float: right;
+  display: inline;
+  font-family: 'News Cycle', sans-serif;
+  font-size: 20px; }
+  /* line 23, assets/sass/_shop.scss */
+  header a p:hover {
+    color: #8f6ea7;
+    cursor: pointer; }
+
+/* line 31, assets/sass/_shop.scss */
+aside h2, aside h3 {
+  color: #90b95d; }
+/* line 34, assets/sass/_shop.scss */
+aside input[type="text"] {
+  width: 300px;
+  margin-bottom: 20px;
+  height: 30px;
+  border: 0px solid;
+  padding-left: 10px;
+  padding-right: 30px;
+  -webkit-box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.15); }
+/* line 43, assets/sass/_shop.scss */
+aside hr {
+  width: 300px;
+  margin-left: 0px; }
+/* line 47, assets/sass/_shop.scss */
+aside span {
+  color: #d3d3d3;
+  position: relative;
+  right: 25px;
+  top: 3px;
+  display: inline; }
+/* line 54, assets/sass/_shop.scss */
+aside ul {
+  padding-left: 20px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  color: #8f6ea7;
+  font-size: 25px;
+  list-style: none; }
+  /* line 60, assets/sass/_shop.scss */
+  aside ul li {
+    margin-bottom: 7px;
+    transition: color 0.3s ease; }
+    /* line 63, assets/sass/_shop.scss */
+    aside ul li:before {
+      content: "+";
+      margin-right: 4px; }
+    /* line 67, assets/sass/_shop.scss */
+    aside ul li:hover {
+      color: #90b95d; }
+
+/* line 73, assets/sass/_shop.scss */
+.icon-cart {
+  display: inline;
+  margin-left: 40px;
+  color: #8f6ea7; }
+
 /* line 1, assets/sass/_footer.scss */
 .social-wrap {
-  border-top: 2px solid #8f6ea7;
+  border-top: 1px solid #8f6ea7;
   width: 100%;
   background-color: #e7e7e7; }
   /* line 5, assets/sass/_footer.scss */
@@ -677,16 +883,17 @@ section {
             color: #8f6ea7; }
       /* line 22, assets/sass/_footer.scss */
       .social-wrap .social section span {
+        display: inline;
         font-size: 35px;
         color: #868686;
         margin: 10px 10px 0px 0px; }
-        /* line 26, assets/sass/_footer.scss */
+        /* line 27, assets/sass/_footer.scss */
         .social-wrap .social section span:hover {
           color: #90b95d; }
-      /* line 30, assets/sass/_footer.scss */
+      /* line 31, assets/sass/_footer.scss */
       .social-wrap .social section form {
         margin-bottom: 30px; }
-        /* line 32, assets/sass/_footer.scss */
+        /* line 33, assets/sass/_footer.scss */
         .social-wrap .social section form input[type=text] {
           display: block;
           width: 245px;
@@ -694,35 +901,35 @@ section {
           padding-left: 5px;
           border: 1px solid #8f6ea7;
           margin-bottom: 17px; }
-        /* line 40, assets/sass/_footer.scss */
+        /* line 41, assets/sass/_footer.scss */
         .social-wrap .social section form input[type=submit] {
           width: 130px;
           height: 30px;
           background-color: #90b95d;
           border: 0px;
           color: #8f6ea7; }
-          /* line 46, assets/sass/_footer.scss */
+          /* line 47, assets/sass/_footer.scss */
           .social-wrap .social section form input[type=submit]:hover {
             background-color: #8f6ea7;
             color: #90b95d; }
         @media screen and (max-width: 480px) {
-          /* line 30, assets/sass/_footer.scss */
+          /* line 31, assets/sass/_footer.scss */
           .social-wrap .social section form {
             margin-bottom: 10px; } }
-      /* line 55, assets/sass/_footer.scss */
+      /* line 56, assets/sass/_footer.scss */
       .social-wrap .social section h4, .social-wrap .social section i {
         color: #72be13; }
-      /* line 58, assets/sass/_footer.scss */
+      /* line 59, assets/sass/_footer.scss */
       .social-wrap .social section i {
         display: block; }
-      /* line 61, assets/sass/_footer.scss */
+      /* line 62, assets/sass/_footer.scss */
       .social-wrap .social section ul {
         list-style-type: none;
         padding-left: 0px; }
-        /* line 64, assets/sass/_footer.scss */
+        /* line 65, assets/sass/_footer.scss */
         .social-wrap .social section ul li {
           font-family: 'News Cycle', sans-serif; }
-          /* line 66, assets/sass/_footer.scss */
+          /* line 67, assets/sass/_footer.scss */
           .social-wrap .social section ul li:hover {
             color: #90b95d; }
       /* line 85, C:/wamp/www/safe4kids/neat/grid/_span-columns.scss */
@@ -745,34 +952,34 @@ section {
           .social-wrap .social section:last-child {
             margin-right: 0; } }
 
-/* line 79, assets/sass/_footer.scss */
+/* line 80, assets/sass/_footer.scss */
 footer {
   width: 100%;
   background-color: #212121;
   height: 50px;
-  border-top: 1px solid #606060;
+  border-top: 2px solid #606060;
   padding: 12px 0; }
-  /* line 85, assets/sass/_footer.scss */
+  /* line 86, assets/sass/_footer.scss */
   footer #back-to-top {
     float: right; }
     @media screen and (max-width: 1200px) {
-      /* line 85, assets/sass/_footer.scss */
+      /* line 86, assets/sass/_footer.scss */
       footer #back-to-top {
         display: none !important; } }
-  /* line 91, assets/sass/_footer.scss */
+  /* line 92, assets/sass/_footer.scss */
   footer a {
     color: #90b95d; }
-    /* line 93, assets/sass/_footer.scss */
+    /* line 94, assets/sass/_footer.scss */
     footer a:hover {
       color: #8f6ea7; }
-  /* line 97, assets/sass/_footer.scss */
+  /* line 98, assets/sass/_footer.scss */
   footer p {
     margin: 0;
     font-size: 12px;
     float: left;
     color: white; }
   @media screen and (max-width: 1200px) {
-    /* line 79, assets/sass/_footer.scss */
+    /* line 80, assets/sass/_footer.scss */
     footer {
       padding-left: 20px; } }
 

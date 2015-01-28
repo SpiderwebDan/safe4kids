@@ -4,11 +4,11 @@
 
 @font-face {
 	font-family: 'icomoon';
-	src:url('/safe4kids/assets/fonts/icomoon.eot?-uivsm9');
-	src:url('/safe4kids/assets/fonts/icomoon.eot?#iefix-uivsm9') format('embedded-opentype'),
-		url('/safe4kids/assets/fonts/icomoon.woff?-uivsm9') format('woff'),
-		url('/safe4kids/assets/fonts/icomoon.ttf?-uivsm9') format('truetype'),
-		url('/safe4kids/assets/fonts/icomoon.svg?-uivsm9#icomoon') format('svg');
+	src:url('/safe4kids/assets/fonts/icomoon.eot?mkmcpr');
+	src:url('/safe4kids/assets/fonts/icomoon.eot?#iefixmkmcpr') format('embedded-opentype'),
+		url('/safe4kids/assets/fonts/icomoon.woff?mkmcpr') format('woff'),
+		url('/safe4kids/assets/fonts/icomoon.ttf?mkmcpr') format('truetype'),
+		url('/safe4kids/assets/fonts/icomoon.svg?mkmcpr#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -35,16 +35,20 @@
 	content: "\e600";
 }
 
+.icon-cart:before {
+	content: "\e93a";
+}
+
 .icon-phone:before {
 	content: "\e942";
 }
 
-.icon-menu:before {
-	content: "\e9bd";
+.icon-search:before {
+	content: "\e986";
 }
 
-.icon-sphere:before {
-	content: "\e9c9";
+.icon-menu:before {
+	content: "\e9bd";
 }
 
 .icon-mail:before {
